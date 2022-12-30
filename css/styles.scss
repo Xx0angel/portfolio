@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+
+html {
+    font-size: 75%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+// VARIABLES
+
+$principal: "Rubik", sans-serif;
+
+// COLORS
+$principal-color: #4458dc;
+$black-color: #000000;
+$white-color: #ffffff;
+
+// RECYCLE CODE
+
+.button {
+    background-color: pink;
+    width: 130px;
+    text-align: center;
+}
+
+// NAVBAR STYLES
+
+header {
+    // box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
+    .header__box {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0 10%;
+        .header__title {
+            font-family: $principal;
+        }
+        .header__nav {
+            .nav__list {
+                display: flex;
+
+                .list__link {
+                    .list__item {
+                        margin: 0.5rem 1rem;
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        font-family: $principal;
+                        font-weight: 600;
+                        &:hover {
+                            color: $principal-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button__menu {
+            display: none;
+        }
+    }
+}
+
+@import "mobile";
