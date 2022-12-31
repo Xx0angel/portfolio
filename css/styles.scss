@@ -29,15 +29,66 @@ $principal: "Rubik", sans-serif;
 
 // COLORS
 $principal-color: #4458dc;
+$secondary-color: #8b8be2;
 $black-color: #000000;
 $white-color: #ffffff;
+
+// LETTER COLOR
+$second-color: #777777;
 
 // RECYCLE CODE
 
 .button {
-    background-color: pink;
-    width: 130px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    color: $white-color;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-family: "Lato", sans-serif;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    position: relative;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    background-color: $principal-color;
+    background-image: linear-gradient(315deg, $secondary-color 0%, $principal-color 74%);
+    border: none;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5px;
+        background-color: $principal-color;
+        background-image: linear-gradient(315deg, $principal-color 0%, $secondary-color 74%);
+        box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+        transition: all 0.3s ease;
+    }
+    &:hover {
+        color: #fff;
+        &:after {
+            top: 0;
+            height: 100%;
+        }
+    }
+    &:active {
+        top: 2px;
+    }
 }
 
 // NAVBAR STYLES
@@ -78,4 +129,62 @@ header {
     }
 }
 
+// PRINCIPAL SECTION STYLES
+.home {
+    margin: 2rem;
+    position: relative;
+    .home__container {
+        .home__content-grid {
+            display: grid;
+            grid-template-columns: 0.5fr 3fr;
+            align-items: center;
+            padding-top: 3rem;
+            
+            .home__social {
+                display: flex;
+                flex-direction: column;
+            }
+            .home__img {
+                display: flex;
+                justify-content: center;
+                .home__blob {
+                    fill: $principal-color;
+                    .home__blob-img {
+                        width: 170px;
+                    }
+                }
+            }
+        }
+        .home__data {
+            margin-bottom: 1rem;
+            .home__title {
+                font-size: 2.25rem;
+            }
+            .home__subtitle {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: $second-color;
+            }
+            .home__description {
+                font-size: 1rem;
+                margin: 0;
+                margin-bottom: 1rem;
+                color: $second-color;
+            }
+            .home__scroll {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.social__link {
+    .social__link-icon {
+        font-size: 1.5rem;
+    }
+}
+
 @import "mobile";
+
+@import "computer";
