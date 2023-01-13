@@ -44,6 +44,34 @@
             }
         }
     }
+
+    // ABOUT ME SECTION
+    .about {
+        .about__content{
+            .about__box {
+                display: flex;
+                justify-content: space-evenly;
+                .about__img {
+                    width: 45%;
+                    display: flex;
+                    justify-content: flex-start;
+                    .about__img-me {
+                        width: 90%;
+                    }
+                }
+                .about__description {
+                    width: 45%;
+                    .description__details{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 2rem 0;
+                    }
+                }
+                
+            }
+        }
+    }
+    
 }
 
 @media (min-width: 1200px) {

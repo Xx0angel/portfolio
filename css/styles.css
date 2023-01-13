@@ -34,14 +34,14 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
-  height: 50px;
+  width: 180px;
+  height: 60px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+  font-size: 1rem;
   color: #ffffff;
-  border-radius: 5px;
   padding: 0.5rem 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Rubik", sans-serif;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -54,9 +54,14 @@ li {
           box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background-color: #4458dc;
-  background-image: linear-gradient(315deg, #8b8be2 0%, #4458dc 74%);
   border: none;
   z-index: 1;
+  background-image: linear-gradient(315deg, #8b8be2 0%, #4458dc 74%);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 
 .button::after {
@@ -87,6 +92,24 @@ li {
 
 .button:active {
   top: 2px;
+}
+
+.button .icon {
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.title .title__principal {
+  font-size: 2rem;
+}
+
+.title .title__description {
+  font-size: 1rem;
+  color: #777777;
 }
 
 header {
@@ -204,6 +227,73 @@ header .header__box .button__menu {
   font-size: 1.5rem;
 }
 
+.about {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about__content .about__box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.about .about__content .about__box .about__img {
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.about .about__content .about__box .about__img .about__img-me {
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about .about__content .about__box .about__description {
+  width: 100%;
+}
+
+.about .about__content .about__box .about__description .description__text {
+  color: #777777;
+  text-align: justify;
+}
+
+.about .about__content .about__box .about__description .description__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.about .about__content .about__box .about__description .description__details .details__item .details__item-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about .about__content .about__box .about__description .description__details .details__item .details__item-subtitle,
+.about .about__content .about__box .about__description .description__details .details__item .details__item-title {
+  text-align: center;
+}
+
+.about .about__content .about__box .about__description .description__details .details__item .details__item-subtitle {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
   header .header__box {
     margin: 0 0;
@@ -308,6 +398,38 @@ header .header__box .button__menu {
     position: absolute;
     bottom: 10%;
     left: 50%;
+  }
+  .about .about__content .about__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about .about__content .about__box .about__img {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about .about__content .about__box .about__img .about__img-me {
+    width: 90%;
+  }
+  .about .about__content .about__box .about__description {
+    width: 45%;
+  }
+  .about .about__content .about__box .about__description .description__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 2rem 0;
   }
 }
 
