@@ -294,6 +294,120 @@ header .header__box .button__menu {
   font-size: 0.8rem;
 }
 
+.skills {
+  min-height: 100vh;
+}
+
+.skills .skills__content .skills__box .skills__flex-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill .icon {
+  font-size: 2rem;
+  color: #4458dc;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill .skill__description {
+  margin-left: 1rem;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill .skill__description .skill__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill .skill__description .skill__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill__icon {
+  font-size: 1.5rem;
+  color: #4458dc;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown {
+  overflow: hidden;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail {
+  width: 87%;
+  margin-left: 13%;
+  margin-bottom: 1.25rem;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-basic {
+  width: 10%;
+  height: 5px;
+  background-color: #4458dc;
+  border: none;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-mid {
+  width: 65%;
+  height: 5px;
+  background-color: #4458dc;
+  border: none;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-high {
+  width: 100%;
+  height: 5px;
+  background-color: #4458dc;
+  border: none;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__close .skills__dropdown {
+  height: 0px;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__open .skills__dropdown {
+  height: 100px;
+}
+
 @media (max-width: 768px) {
   header .header__box {
     margin: 0 0;

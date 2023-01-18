@@ -262,7 +262,99 @@ header {
     }
 }
 
-//
+// SKILLS
+
+.skills{
+    min-height: 100vh;
+
+    .skills__content{
+
+        .skills__box{
+            .skills__flex-container{
+                width: 90%;
+                margin: 0 auto;
+                .skills__item{
+                    position: relative;
+                    width: 100%;
+                    margin: 2rem 0 ;
+                    .skill__item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 2.5rem;
+                        .skill{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            .icon{
+                                font-size: 2rem;
+                                color: $principal-color;
+                            }
+                            .skill__description{
+                                margin-left: 1rem;
+                                .skill__title{
+                                    font-size: 1.25rem;
+                                    font-weight: 600;
+                                }
+                                .skill__subtitle{
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    color: $second-color;
+                                }
+                            }
+                        }
+                        .skill__icon{
+                            font-size: 1.5rem;
+                            color: $principal-color;
+                        }
+                    }
+
+                    .skills__dropdown{
+                        overflow: hidden;
+                        .skill__detail{
+                            width: 87%;
+                            margin-left: 13%;
+                            margin-bottom: 1.25rem;
+                            .skill__detail-item{
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 0.5rem
+                            }
+                            .skill__detail-level-basic{
+                                width: 10%;
+                                height: 5px;
+                                background-color: $principal-color;
+                                border: none;
+                            }
+                            .skill__detail-level-mid{
+                                width: 65%;
+                                height: 5px;
+                                background-color: $principal-color;
+                                border: none;
+                            }
+                            .skill__detail-level-high{
+                                width: 100%;
+                                height: 5px;
+                                background-color: $principal-color;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                .skills__close{
+                    .skills__dropdown{
+                        height: 0px;
+                    }
+                }
+                .skills__open{
+                    .skills__dropdown{
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @import "mobile";
 
