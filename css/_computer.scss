@@ -47,7 +47,7 @@
 
     // ABOUT ME SECTION
     .about {
-        .about__content{
+        .about__content {
             .about__box {
                 display: flex;
                 justify-content: space-evenly;
@@ -61,17 +61,27 @@
                 }
                 .about__description {
                     width: 45%;
-                    .description__details{
+                    .description__details {
                         display: flex;
                         justify-content: space-between;
                         margin: 2rem 0;
                     }
                 }
-                
             }
         }
     }
-    
+    // PORTFOLIO SECTION
+    .portfolio {
+        .portfolio__box {
+            .portfolio__content {
+                .portfolio__projects {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -95,9 +105,19 @@
             .skills__box {
                 .skills__flex-container {
                     width: 60%;
-                 .skills__item{
-                    width: 49%;
-                 }
+                    .skills__item {
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+    // PORTFOLIO SECTION
+    .portfolio {
+        .portfolio__box {
+            .portfolio__content {
+                .portfolio__projects {
+                    grid-template-columns: auto auto auto;
                 }
             }
         }
