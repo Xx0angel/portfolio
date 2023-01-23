@@ -10,8 +10,8 @@ menu.onclick = () => {
 }
 
 // SKILLS 
-const skillsContent = document.querySelector(".skills__item"),
-      skillsHeader = document.querySelectorAll(".skill")
+const skillsContent = document.getElementsByClassName('skills__item'),
+      skillsHeader = document.querySelectorAll('.skill__item')
 
 function toggleSkills(){
     let itemClass = this.parentNode.className
@@ -19,13 +19,14 @@ function toggleSkills(){
     for(i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills__item skills__close'
     }
-    if(itemClass === 'skills__content skills__close'){
+    
+    if(itemClass === 'skills__item skills__close'){
         this.parentNode.className = 'skills__item skills__open'
     }
+    console.log("click")
 }
 
-skillsHeader.forEach((el) => {
-    console.log()
+skillsHeader.forEach((el) => {   
     el.addEventListener('click', toggleSkills)
 })
 

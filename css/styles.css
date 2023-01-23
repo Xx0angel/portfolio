@@ -296,6 +296,20 @@ header .header__box .button__menu {
 
 .skills {
   min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills__content {
+  width: 100%;
 }
 
 .skills .skills__content .skills__box .skills__flex-container {
@@ -402,10 +416,21 @@ header .header__box .button__menu {
 
 .skills .skills__content .skills__box .skills__flex-container .skills__close .skills__dropdown {
   height: 0px;
+  overflow: hidden;
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__open .skills__dropdown {
-  height: 100px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.skills .skills__content .skills__box .skills__flex-container .skills__open .skill__icon {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
 }
 
 @media (max-width: 768px) {
@@ -455,6 +480,23 @@ header .header__box .button__menu {
   }
   header .header__box .button__menu .menu__icon {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .skills .skills__content .skills__box .skills__flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .skills .skills__content .skills__box .skills__flex-container .skills__item {
+    width: 49%;
   }
 }
 
@@ -556,6 +598,12 @@ header .header__box .button__menu {
   }
   .home .home__container .home__data {
     width: 40%;
+  }
+  .skills .skills__content .skills__box .skills__flex-container {
+    width: 60%;
+  }
+  .skills .skills__content .skills__box .skills__flex-container .skills__item {
+    width: 49%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

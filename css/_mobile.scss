@@ -46,3 +46,22 @@
         }
     }
 }
+
+@media (min-width: 600px) {
+    // SKILLS SECTION
+    .skills {
+        .skills__content {
+            .skills__box {
+                .skills__flex-container {
+                 display: flex;
+                 justify-content: space-between;
+                 flex-wrap: wrap;
+                 position: relative;
+                 .skills__item{
+                    width: 49%;
+                 }
+                }
+            }
+        }
+    }
+}

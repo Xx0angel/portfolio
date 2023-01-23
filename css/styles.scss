@@ -262,77 +262,80 @@ header {
     }
 }
 
-// SKILLS
+// SKILLS SECTION
 
-.skills{
+.skills {
     min-height: 100vh;
-
-    .skills__content{
-
-        .skills__box{
-            .skills__flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .skills__content {
+        width: 100%;
+        .skills__box {
+            .skills__flex-container {
                 width: 90%;
                 margin: 0 auto;
-                .skills__item{
+                .skills__item {
                     position: relative;
                     width: 100%;
-                    margin: 2rem 0 ;
-                    .skill__item{
+                    margin: 2rem 0;
+                    .skill__item {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         margin-bottom: 2.5rem;
-                        .skill{
+                        .skill {
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
-                            .icon{
+                            .icon {
                                 font-size: 2rem;
                                 color: $principal-color;
                             }
-                            .skill__description{
+                            .skill__description {
                                 margin-left: 1rem;
-                                .skill__title{
+                                .skill__title {
                                     font-size: 1.25rem;
                                     font-weight: 600;
                                 }
-                                .skill__subtitle{
+                                .skill__subtitle {
                                     font-size: 1rem;
                                     font-weight: 400;
                                     color: $second-color;
                                 }
                             }
                         }
-                        .skill__icon{
+                        .skill__icon {
                             font-size: 1.5rem;
                             color: $principal-color;
                         }
                     }
 
-                    .skills__dropdown{
+                    .skills__dropdown {
                         overflow: hidden;
-                        .skill__detail{
+                        .skill__detail {
                             width: 87%;
                             margin-left: 13%;
                             margin-bottom: 1.25rem;
-                            .skill__detail-item{
+                            .skill__detail-item {
                                 display: flex;
                                 justify-content: space-between;
-                                margin-bottom: 0.5rem
+                                margin-bottom: 0.5rem;
                             }
-                            .skill__detail-level-basic{
+                            .skill__detail-level-basic {
                                 width: 10%;
                                 height: 5px;
                                 background-color: $principal-color;
                                 border: none;
                             }
-                            .skill__detail-level-mid{
+                            .skill__detail-level-mid {
                                 width: 65%;
                                 height: 5px;
                                 background-color: $principal-color;
                                 border: none;
                             }
-                            .skill__detail-level-high{
+                            .skill__detail-level-high {
                                 width: 100%;
                                 height: 5px;
                                 background-color: $principal-color;
@@ -341,20 +344,26 @@ header {
                         }
                     }
                 }
-                .skills__close{
-                    .skills__dropdown{
-                        height: 0px;
-                    }
+                .skills__close .skills__dropdown {
+                    height: 0px;
+                    overflow: hidden;
                 }
-                .skills__open{
-                    .skills__dropdown{
-                        height: 100px;
-                    }
+                .skills__open .skills__dropdown {
+                    height: max-content;
+                }
+                .skills__open .skill__icon {
+                    transform: rotate(-180deg);
+                    -webkit-transform: rotate(-180deg);
+                    -moz-transform: rotate(-180deg);
+                    -ms-transform: rotate(-180deg);
+                    -o-transform: rotate(-180deg);
                 }
             }
         }
     }
 }
+
+
 
 @import "mobile";
 
