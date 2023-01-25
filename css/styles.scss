@@ -365,6 +365,7 @@ header {
 
 // PORTFOLIO SECTION
 .portfolio {
+    padding-bottom: 4rem;
     overflow: hidden;
     .portfolio__box {
         .portfolio__content {
@@ -439,6 +440,155 @@ header {
                 }
             }
         }
+    }
+}
+
+// CONTACT SECTION
+.contact {
+    padding: 1rem 0;
+    background-color: $principal-color;
+    margin-top: 4rem;
+    .contact__box {
+        .title{
+            margin: 1rem 0 2rem 0;
+            .title__principal{
+                color: $white-color;
+            }
+            .title__description{
+                color: rgba($white-color, $alpha: 0.75);
+            }
+        }
+        .contact__content {
+            margin: 0 auto;
+            .contact__information {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin: 0 auto 1rem auto;
+                .contact__information-item {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1rem 0;
+
+                    .contact__information-icon {
+                        font-size: 3rem;
+                        color: $white-color;
+                        margin-right: 1rem;
+                    }
+                    .information__box {
+                        color: rgba($white-color, $alpha: 0.75);
+                        .information__link {
+                            color: $white-color;
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+            .contact__social {
+                background-color: rgba(#000000, $alpha: 0.6);
+                margin: 1rem 0;
+                padding: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                .contact__social-media {
+                    font-size: 1rem;
+                    color: $white-color;
+                    margin: 1rem 0;
+                }
+                .social__media {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .social__media-link {
+                        margin: 0 0.5rem;
+                        .social__media-icon {
+                            width: 3.5rem;
+                            height: 3.5rem;
+                            font-size: 2.5rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #18191f;
+                            //background-color: red;
+                            color: #fff;
+                            box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080,
+                                2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+                                inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+                            //padding: 0.5rem 1rem;
+                            animation: animate 3s linear infinite;
+                            text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+                            border-radius: 0.5rem;
+                            -webkit-border-radius: 0.5rem;
+                            -moz-border-radius: 0.5rem;
+                            -ms-border-radius: 0.5rem;
+                            -o-border-radius: 0.5rem;
+                            -webkit-animation: animate 3s linear infinite;
+                        }
+                        #github {
+                            animation-delay: 0.3s;
+                        }
+                        #linkedin {
+                            animation-delay: 0.7s;
+                        }
+                        #whatsapp {
+                            animation-delay: 0.1s;
+                        }
+                    }
+                }
+            }
+            .contact__profile{
+                width: 80%;
+                margin: 1.5rem auto 0 auto;
+                .contact__profile-description{
+                    .profile__title{
+                        margin-bottom: 0.5rem;
+                        color: $white-color;
+                        font-size: 1.5rem;
+                    }
+                    .profile__line{
+                        width: 5%;
+                        height: 1px;
+                        border: 0;
+                        background-color: rgba(#FFF, 0.8);
+                        margin-bottom: .5rem;
+                    }
+                    .profile__description{
+                        width: 50%;
+                        color: rgba($white-color, $alpha: 0.75);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER SECTION
+.footer{
+    background-color: $principal-color;
+
+    .footer__box{
+        background-color: rgba(#000000, $alpha: 0.6);
+        padding: 0.75rem 0;
+        .footer__content{
+            text-align: center;
+            .footer__copy{
+                color: $white-color;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
     }
 }
 

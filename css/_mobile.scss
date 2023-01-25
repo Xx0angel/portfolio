@@ -33,6 +33,16 @@
             }
         }
     }
+    // CONTACT SECTION
+    .contact {
+        .contact__box {
+            .contact__content {
+                .contact__information {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -78,6 +88,21 @@
                 display: inline;
                 .menu__icon {
                     font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    // CONTACT SECTION
+    .contact {
+        .contact__box {
+            .contact__content {
+                .contact__profile{
+                    .contact__profile-description{
+                        .profile__description{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
