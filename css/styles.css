@@ -9,6 +9,7 @@
   -moz-transition: all ease-in 200ms;
   -ms-transition: all ease-in 200ms;
   -o-transition: all ease-in 200ms;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -697,7 +698,7 @@ header .header__box .button__menu {
   height: 1px;
   border: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact .contact__box .contact__content .contact__profile .contact__profile-description .profile__description {
@@ -719,6 +720,33 @@ header .header__box .button__menu {
 }
 
 .footer .footer__box .footer__content .footer__copy {
+  color: #ffffff;
+}
+
+.arrow-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90%;
+  z-index: 100;
+}
+
+.arrow-top .arrow-top-icon {
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+  color: #4458dc;
+  background-color: #ffffff;
+  border: 1px solid #4458dc;
+  padding: 0.25rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.arrow-top .arrow-top-icon:hover {
+  background-color: #4458dc;
   color: #ffffff;
 }
 

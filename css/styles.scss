@@ -8,6 +8,7 @@
     -moz-transition: all ease-in 200ms;
     -ms-transition: all ease-in 200ms;
     -o-transition: all ease-in 200ms;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -449,12 +450,12 @@ header {
     background-color: $principal-color;
     margin-top: 4rem;
     .contact__box {
-        .title{
+        .title {
             margin: 1rem 0 2rem 0;
-            .title__principal{
+            .title__principal {
                 color: $white-color;
             }
-            .title__description{
+            .title__description {
                 color: rgba($white-color, $alpha: 0.75);
             }
         }
@@ -541,23 +542,23 @@ header {
                     }
                 }
             }
-            .contact__profile{
+            .contact__profile {
                 width: 80%;
                 margin: 1.5rem auto 0 auto;
-                .contact__profile-description{
-                    .profile__title{
+                .contact__profile-description {
+                    .profile__title {
                         margin-bottom: 0.5rem;
                         color: $white-color;
                         font-size: 1.5rem;
                     }
-                    .profile__line{
+                    .profile__line {
                         width: 5%;
                         height: 1px;
                         border: 0;
-                        background-color: rgba(#FFF, 0.8);
-                        margin-bottom: .5rem;
+                        background-color: rgba(#fff, 0.8);
+                        margin-bottom: 0.5rem;
                     }
-                    .profile__description{
+                    .profile__description {
                         width: 50%;
                         color: rgba($white-color, $alpha: 0.75);
                     }
@@ -568,17 +569,43 @@ header {
 }
 
 // FOOTER SECTION
-.footer{
+.footer {
     background-color: $principal-color;
 
-    .footer__box{
+    .footer__box {
         background-color: rgba(#000000, $alpha: 0.6);
         padding: 0.75rem 0;
-        .footer__content{
+        .footer__content {
             text-align: center;
-            .footer__copy{
+            .footer__copy {
                 color: $white-color;
             }
+        }
+    }
+}
+
+
+
+.arrow-top {
+    position: sticky;
+    top: 90%;
+    z-index: 100;
+    .arrow-top-icon {
+        position: absolute;
+        right: 2rem;
+        font-size: 2rem;
+        color: $principal-color;
+        background-color: $white-color;
+        border: 1px solid $principal-color;
+        padding: 0.25rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        &:hover{
+            background-color: $principal-color;
+            color: $white-color;
         }
     }
 }
