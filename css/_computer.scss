@@ -23,6 +23,9 @@
                     right: 3%;
                     .social__link {
                         margin: 0.5rem 0;
+                        display: inline-block;
+                        width: min-content;
+                        height: min-content;
                     }
                 }
                 .home__img {

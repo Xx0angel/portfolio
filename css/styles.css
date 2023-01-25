@@ -116,6 +116,11 @@ li {
 header {
   -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 101;
+  background-color: #ffffff;
 }
 
 header .header__box {
@@ -222,6 +227,36 @@ header .header__box .button__menu {
 
 .home .home__container .home__data .home__scroll {
   text-align: center;
+  margin-top: 1rem;
+}
+
+.home .home__container .home__data .home__scroll .scroll-link .scroll-icon-box {
+  animation: move 900ms infinite ease-in-out;
+  -webkit-animation: move 900ms infinite ease-in-out;
+}
+
+@-webkit-keyframes move {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 10px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 10px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
 }
 
 .social__link .social__link-icon {
@@ -894,6 +929,13 @@ header .header__box .button__menu {
   }
   .home .home__container .home__content-grid .home__social .social__link {
     margin: 0.5rem 0;
+    display: inline-block;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
   .home .home__container .home__content-grid .home__img .home__blob {
     width: 70%;
