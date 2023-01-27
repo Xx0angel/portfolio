@@ -430,24 +430,30 @@ header .header__box .button__menu {
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-basic {
-  width: 10%;
+  width: 0%;
   height: 5px;
   background-color: #4458dc;
   border: none;
+  animation: level-basic 3s infinite forwards;
+  -webkit-animation: level-basic 3s infinite forwards;
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-mid {
-  width: 65%;
+  width: 0%;
   height: 5px;
   background-color: #4458dc;
   border: none;
+  animation: level-mid 3s infinite forwards;
+  -webkit-animation: level-mid 3s infinite forwards;
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-high {
-  width: 100%;
+  width: 0%;
   height: 5px;
   background-color: #4458dc;
   border: none;
+  animation: level-high 3s infinite forwards;
+  -webkit-animation: level-high 3s infinite forwards;
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__close .skills__dropdown {
@@ -467,6 +473,42 @@ header .header__box .button__menu {
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
+}
+
+@-webkit-keyframes level-basic {
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes level-basic {
+  100% {
+    width: 10%;
+  }
+}
+
+@-webkit-keyframes level-mid {
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes level-mid {
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes level-high {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes level-high {
+  100% {
+    width: 100%;
+  }
 }
 
 .portfolio {

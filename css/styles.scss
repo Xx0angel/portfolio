@@ -208,7 +208,7 @@ header {
                     .scroll-icon-box {
                         animation: move 900ms infinite ease-in-out;
                         -webkit-animation: move 900ms infinite ease-in-out;
-}
+                    }
                 }
             }
         }
@@ -347,22 +347,28 @@ header {
                                 margin-bottom: 0.5rem;
                             }
                             .skill__detail-level-basic {
-                                width: 10%;
+                                width: 0%;
                                 height: 5px;
                                 background-color: $principal-color;
                                 border: none;
+                                animation: level-basic 3s infinite forwards;
+                                -webkit-animation: level-basic 3s infinite forwards;
                             }
                             .skill__detail-level-mid {
-                                width: 65%;
+                                width: 0%;
                                 height: 5px;
                                 background-color: $principal-color;
                                 border: none;
+                                animation: level-mid 3s infinite forwards;
+                                -webkit-animation: level-mid 3s infinite forwards;
                             }
                             .skill__detail-level-high {
-                                width: 100%;
+                                width: 0%;
                                 height: 5px;
                                 background-color: $principal-color;
                                 border: none;
+                                animation: level-high 3s infinite forwards;
+                                -webkit-animation: level-high 3s infinite forwards;
                             }
                         }
                     }
@@ -386,6 +392,23 @@ header {
     }
 }
 
+@keyframes level-basic {
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes level-mid {
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes level-high {
+    100% {
+        width: 100%;
+    }
+}
 // PORTFOLIO SECTION
 .portfolio {
     padding-bottom: 4rem;
