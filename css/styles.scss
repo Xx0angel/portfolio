@@ -29,10 +29,12 @@ li {
 $principal: "Rubik", sans-serif;
 
 // COLORS
-$principal-color: #4458dc;
-$secondary-color: #8b8be2;
+$principal-color: #3B7197;
+$secondary-color: #4A8DB7;
+$third-color: #74BDE0;
+$four-color: #A1E1FA;
 $black-color: #000000;
-$white-color: #ffffff;
+$white-color: #FFFFFF;
 
 // LETTER COLOR
 $second-color: #777777;
@@ -178,8 +180,10 @@ header {
                 justify-content: center;
                 .home__blob {
                     fill: $principal-color;
-                    .home__blob-img {
-                        width: 170px;
+                    g{
+                        .home__blob-img {
+                            width: 100%;
+                        }
                     }
                 }
             }
