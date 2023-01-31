@@ -123,7 +123,6 @@ $second-color: #777777;
 
 header {
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
-    position: sticky;
     top: 0px;
     z-index: 101;
     background-color: $white-color;
@@ -158,6 +157,11 @@ header {
             display: none;
         }
     }
+}
+
+.sticky{
+    position: sticky;
+    background-color: $principal-color;
 }
 
 // PRINCIPAL SECTION STYLES

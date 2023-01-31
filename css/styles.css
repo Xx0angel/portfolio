@@ -116,8 +116,6 @@ li {
 header {
   -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
-  position: -webkit-sticky;
-  position: sticky;
   top: 0px;
   z-index: 101;
   background-color: #FFFFFF;
@@ -158,6 +156,12 @@ header .header__box .header__nav .nav__list .list__link .list__item:hover {
 
 header .header__box .button__menu {
   display: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #3B7197;
 }
 
 .home {
