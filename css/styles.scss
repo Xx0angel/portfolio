@@ -29,12 +29,12 @@ li {
 $principal: "Rubik", sans-serif;
 
 // COLORS
-$principal-color: #3B7197;
-$secondary-color: #4A8DB7;
-$third-color: #74BDE0;
-$four-color: #A1E1FA;
+$principal-color: #3b7197;
+$secondary-color: #4a8db7;
+$third-color: #74bde0;
+$four-color: #a1e1fa;
 $black-color: #000000;
-$white-color: #FFFFFF;
+$white-color: #ffffff;
 
 // LETTER COLOR
 $second-color: #777777;
@@ -159,7 +159,7 @@ header {
     }
 }
 
-.sticky{
+.sticky {
     position: sticky;
     background-color: $principal-color;
 }
@@ -184,7 +184,7 @@ header {
                 justify-content: center;
                 .home__blob {
                     fill: $principal-color;
-                    g{
+                    g {
                         .home__blob-img {
                             width: 100%;
                         }
@@ -196,12 +196,24 @@ header {
             margin-bottom: 1rem;
             .home__title {
                 font-size: 2.25rem;
+                display: block;
+                white-space: nowrap;
+                width: 15ch;
+                overflow: hidden;
+                animation: typingTitle 2s forwards steps(15), blink 0.5s infinite step-end alternate;
+                -webkit-animation: typingTitle 2s forwards steps(15), blink 0.5s infinite step-end alternate;
             }
             .home__subtitle {
-                font-size: 1.25rem;
-                font-weight: 600;
+                display: block;
+                white-space: nowrap;
+                width: 0ch;
+                overflow: hidden;
                 margin-bottom: 0.5rem;
                 color: $second-color;
+                font-size: 1.25rem;
+                font-weight: 600;
+                animation: 2s typing 2s forwards steps(18), blink 0.5s infinite step-end alternate;
+                -webkit-animation: 2s typing 2s forwards steps(18), blink 0.5s infinite step-end alternate;
             }
             .home__description {
                 font-size: 1rem;
@@ -223,6 +235,30 @@ header {
     }
 }
 
+@keyframes typingTitle {
+    from {
+        width: 0;
+        border-right: 4px solid;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        border-right: 4px solid;
+    }
+    to {
+        width: 18ch;
+        border-right: 4px solid;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 @keyframes move {
     0% {
         margin-bottom: 0;
@@ -234,6 +270,7 @@ header {
         margin-bottom: 0;
     }
 }
+
 .social__link {
     .social__link-icon {
         font-size: 1.5rem;

@@ -40,7 +40,7 @@ li {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   font-family: "Rubik", sans-serif;
   background: transparent;
@@ -54,10 +54,10 @@ li {
   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
-  background-color: #3B7197;
+  background-color: #3b7197;
   border: none;
   z-index: 1;
-  background-image: linear-gradient(315deg, #4A8DB7 0%, #3B7197 74%);
+  background-image: linear-gradient(315deg, #4a8db7 0%, #3b7197 74%);
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -74,8 +74,8 @@ li {
   left: 0;
   z-index: -1;
   border-radius: 5px;
-  background-color: #3B7197;
-  background-image: linear-gradient(315deg, #3B7197 0%, #4A8DB7 74%);
+  background-color: #3b7197;
+  background-image: linear-gradient(315deg, #3b7197 0%, #4a8db7 74%);
   -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
           box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   -webkit-transition: all 0.3s ease;
@@ -118,7 +118,7 @@ header {
           box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
   top: 0px;
   z-index: 101;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 header .header__box {
@@ -151,7 +151,7 @@ header .header__box .header__nav .nav__list .list__link .list__item {
 }
 
 header .header__box .header__nav .nav__list .list__link .list__item:hover {
-  color: #3B7197;
+  color: #3b7197;
 }
 
 header .header__box .button__menu {
@@ -161,7 +161,7 @@ header .header__box .button__menu {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  background-color: #3B7197;
+  background-color: #3b7197;
 }
 
 .home {
@@ -200,7 +200,7 @@ header .header__box .button__menu {
 }
 
 .home .home__container .home__content-grid .home__img .home__blob {
-  fill: #3B7197;
+  fill: #3b7197;
 }
 
 .home .home__container .home__content-grid .home__img .home__blob g .home__blob-img {
@@ -213,13 +213,25 @@ header .header__box .button__menu {
 
 .home .home__container .home__data .home__title {
   font-size: 2.25rem;
+  display: block;
+  white-space: nowrap;
+  width: 15ch;
+  overflow: hidden;
+  animation: typingTitle 2s forwards steps(15), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typingTitle 2s forwards steps(15), blink 0.5s infinite step-end alternate;
 }
 
 .home .home__container .home__data .home__subtitle {
-  font-size: 1.25rem;
-  font-weight: 600;
+  display: block;
+  white-space: nowrap;
+  width: 0ch;
+  overflow: hidden;
   margin-bottom: 0.5rem;
   color: #777777;
+  font-size: 1.25rem;
+  font-weight: 600;
+  animation: 2s typing 2s forwards steps(18), blink 0.5s infinite step-end alternate;
+  -webkit-animation: 2s typing 2s forwards steps(18), blink 0.5s infinite step-end alternate;
 }
 
 .home .home__container .home__data .home__description {
@@ -237,6 +249,54 @@ header .header__box .button__menu {
 .home .home__container .home__data .home__scroll .scroll-link .scroll-icon-box {
   animation: move 900ms infinite ease-in-out;
   -webkit-animation: move 900ms infinite ease-in-out;
+}
+
+@-webkit-keyframes typingTitle {
+  from {
+    width: 0;
+    border-right: 4px solid;
+  }
+}
+
+@keyframes typingTitle {
+  from {
+    width: 0;
+    border-right: 4px solid;
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+    border-right: 4px solid;
+  }
+  to {
+    width: 18ch;
+    border-right: 4px solid;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: 4px solid;
+  }
+  to {
+    width: 18ch;
+    border-right: 4px solid;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 @-webkit-keyframes move {
@@ -390,7 +450,7 @@ header .header__box .button__menu {
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill .icon {
   font-size: 2rem;
-  color: #3B7197;
+  color: #3b7197;
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill .skill__description {
@@ -410,7 +470,7 @@ header .header__box .button__menu {
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skill__item .skill__icon {
   font-size: 1.5rem;
-  color: #3B7197;
+  color: #3b7197;
 }
 
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown {
@@ -436,7 +496,7 @@ header .header__box .button__menu {
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-basic {
   width: 0%;
   height: 5px;
-  background-color: #3B7197;
+  background-color: #3b7197;
   border: none;
   animation: level-basic 3s infinite forwards;
   -webkit-animation: level-basic 3s infinite forwards;
@@ -445,7 +505,7 @@ header .header__box .button__menu {
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-mid {
   width: 0%;
   height: 5px;
-  background-color: #3B7197;
+  background-color: #3b7197;
   border: none;
   animation: level-mid 3s infinite forwards;
   -webkit-animation: level-mid 3s infinite forwards;
@@ -454,7 +514,7 @@ header .header__box .button__menu {
 .skills .skills__content .skills__box .skills__flex-container .skills__item .skills__dropdown .skill__detail .skill__detail-level-high {
   width: 0%;
   height: 5px;
-  background-color: #3B7197;
+  background-color: #3b7197;
   border: none;
   animation: level-high 3s infinite forwards;
   -webkit-animation: level-high 3s infinite forwards;
@@ -610,7 +670,7 @@ header .header__box .button__menu {
 
 .portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information .project__name,
 .portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information .project__category {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link:hover .project__image {
@@ -619,7 +679,7 @@ header .header__box .button__menu {
 
 .contact {
   padding: 1rem 0;
-  background-color: #3B7197;
+  background-color: #3b7197;
   margin-top: 4rem;
 }
 
@@ -628,7 +688,7 @@ header .header__box .button__menu {
 }
 
 .contact .contact__box .title .title__principal {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact .contact__box .title .title__description {
@@ -673,7 +733,7 @@ header .header__box .button__menu {
 
 .contact .contact__box .contact__content .contact__information .contact__information-item .contact__information-icon {
   font-size: 3rem;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 1rem;
 }
 
@@ -682,7 +742,7 @@ header .header__box .button__menu {
 }
 
 .contact .contact__box .contact__content .contact__information .contact__information-item .information__box .information__link {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.25rem;
 }
 
@@ -705,7 +765,7 @@ header .header__box .button__menu {
 
 .contact .contact__box .contact__content .contact__social .contact__social-media {
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 1rem 0;
 }
 
@@ -770,7 +830,7 @@ header .header__box .button__menu {
 
 .contact .contact__box .contact__content .contact__profile .contact__profile-description .profile__title {
   margin-bottom: 0.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 
@@ -788,7 +848,7 @@ header .header__box .button__menu {
 }
 
 .footer {
-  background-color: #3B7197;
+  background-color: #3b7197;
 }
 
 .footer .footer__box {
@@ -801,7 +861,7 @@ header .header__box .button__menu {
 }
 
 .footer .footer__box .footer__content .footer__copy {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .arrow-top {
@@ -815,9 +875,9 @@ header .header__box .button__menu {
   position: absolute;
   right: 2rem;
   font-size: 2rem;
-  color: #3B7197;
-  background-color: #FFFFFF;
-  border: 1px solid #3B7197;
+  color: #3b7197;
+  background-color: #ffffff;
+  border: 1px solid #3b7197;
   padding: 0.25rem;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -827,8 +887,8 @@ header .header__box .button__menu {
 }
 
 .arrow-top .arrow-top-icon:hover {
-  background-color: #3B7197;
-  color: #FFFFFF;
+  background-color: #3b7197;
+  color: #ffffff;
 }
 
 @-webkit-keyframes animate {
@@ -899,7 +959,7 @@ header .header__box .button__menu {
     left: 0;
     width: 100%;
     height: calc(100vh - 66px);
-    background-color: #3B7197;
+    background-color: #3b7197;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
@@ -915,7 +975,7 @@ header .header__box .button__menu {
             justify-content: space-between;
   }
   header .header__box .header__nav .nav__list .list__link .list__item {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   header .header__box .header__nav .nav__list .list__link .list__item:hover {
     color: #000000;
