@@ -627,6 +627,11 @@ header .header__box .button__menu {
   height: 200px;
   -webkit-box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1);
+  transition: ease-in 200ms;
+  -webkit-transition: ease-in 200ms;
+  -moz-transition: ease-in 200ms;
+  -ms-transition: ease-in 200ms;
+  -o-transition: ease-in 200ms;
 }
 
 .portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item .project__information {
