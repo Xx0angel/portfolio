@@ -45,6 +45,7 @@ function functionSticky() {
 ScrollReveal().reveal('.header');
 ScrollReveal().reveal('.header__box');
 ScrollReveal().reveal('.home', { delay: 500 });
+ScrollReveal().reveal('.skills__box', { delay: 500 });
 
 // AOS LIBRARY
 AOS.init();
