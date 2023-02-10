@@ -476,6 +476,7 @@ header {
 
                     .project__item {
                         width: 100%;
+                        
                         max-width: 360px;
                         height: 200px;
                         position: relative;
@@ -498,19 +499,30 @@ header {
                             -webkit-transition: all ease-in 300ms;
                             -moz-transition: all ease-in 300ms;
                             -ms-transition: all ease-in 300ms;
-                            -o-transition: all ease-in 300ms;
+                            -o-transition: all ease-in 300ms;                            
                             .project__name {
                                 font-size: 1.75rem;
                                 text-transform: capitalize;
                                 text-align: center;
-                            }
-                            p {
                                 color: transparent;
                                 transition: all ease-in 400ms;
                                 -webkit-transition: all ease-in 400ms;
                                 -moz-transition: all ease-in 400ms;
                                 -ms-transition: all ease-in 400ms;
                                 -o-transition: all ease-in 400ms;
+                            }
+                            .project__list-technologies {
+                                text-align: center;
+                                color: transparent;
+                                transition: all ease-in 400ms;
+                                -webkit-transition: all ease-in 400ms;
+                                -moz-transition: all ease-in 400ms;
+                                -ms-transition: all ease-in 400ms;
+                                -o-transition: all ease-in 400ms;
+                                .technologies__item {
+                                    padding: 0 0 0 0.5rem;
+                                    display: inline;
+                                }
                             }
                         }
                         &:hover {
@@ -526,9 +538,11 @@ header {
                                 top: 0;
                                 left: 0;
                                 background: rgba($principal-color, 0.9);
-                                .project__name,
-                                .project__category {
+                                .project__name{
                                     color: $white-color;
+                                }
+                                .project__list-technologies {
+                                    color: $four-color;
                                 }
                             }
                         }

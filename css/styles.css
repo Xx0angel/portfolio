@@ -647,15 +647,27 @@ header .header__box .button__menu {
   font-size: 1.75rem;
   text-transform: capitalize;
   text-align: center;
-}
-
-.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item .project__information p {
   color: transparent;
   transition: all ease-in 400ms;
   -webkit-transition: all ease-in 400ms;
   -moz-transition: all ease-in 400ms;
   -ms-transition: all ease-in 400ms;
   -o-transition: all ease-in 400ms;
+}
+
+.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item .project__information .project__list-technologies {
+  text-align: center;
+  color: transparent;
+  transition: all ease-in 400ms;
+  -webkit-transition: all ease-in 400ms;
+  -moz-transition: all ease-in 400ms;
+  -ms-transition: all ease-in 400ms;
+  -o-transition: all ease-in 400ms;
+}
+
+.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item .project__information .project__list-technologies .technologies__item {
+  padding: 0 0 0 0.5rem;
+  display: inline;
 }
 
 .portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information {
@@ -681,9 +693,12 @@ header .header__box .button__menu {
   background: rgba(59, 113, 151, 0.9);
 }
 
-.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information .project__name,
-.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information .project__category {
+.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information .project__name {
   color: #ffffff;
+}
+
+.portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link .project__item:hover .project__information .project__list-technologies {
+  color: #a1e1fa;
 }
 
 .portfolio .portfolio__box .portfolio__content .portfolio__projects .project__link:hover .project__image {
